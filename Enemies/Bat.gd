@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var knockback = Vector2.ZERO
-const FRICTION = 200
+const FRICTION = 400
 onready var stats = $Stats
 
 func _ready():

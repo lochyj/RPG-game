@@ -47,6 +47,7 @@ script = ExtResource( 4 )
 
 [node name="Bat animation" type="AnimatedSprite" parent="."]
 frames = SubResource( 6 )
+frame = 1
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -64,7 +65,7 @@ position = Vector2( 0, -14 )
 shape = SubResource( 8 )
 
 [node name="Stats" parent="." instance=ExtResource( 5 )]
-maxHealth = 2
+maxHealth = 3
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
