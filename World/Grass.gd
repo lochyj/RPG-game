@@ -1,10 +1,13 @@
 extends Node2D
 
+# -------------------------------------------------------------------------------------
+# Preloading the scene saves loading the scene every time the grass effect is instanced
+# -------------------------------------------------------------------------------------
+const GrassEffect = preload("res://Effects/GrassEffect.tscn")
+
 func create_grass_effect():
-	var GrassEffect = load("res://Effects/GrassEffect.tscn")
 	var grassEffect = GrassEffect.instance()
-	var main = get_tree().current_scene
-	main.add_child(grassEffect)
+	get_parent().add_child(grassEffect)
 	grassEffect.global_position = global_position
 
 func _on_HurtBox_area_entered(area):

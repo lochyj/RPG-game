@@ -545,12 +545,6 @@ tile_data = PoolIntArray( -393225, 0, 0, -393224, 0, 1, -393223, 0, 1, -393222, 
 [node name="Player" parent="World objects" instance=ExtResource( 2 )]
 position = Vector2( -32, 104 )
 
-[node name="Camera2D" type="Camera2D" parent="World objects/Player"]
-current = true
-process_mode = 0
-smoothing_enabled = true
-smoothing_speed = 10.0
-
 [node name="Enemys" type="YSort" parent="World objects"]
 
 [node name="Bat" parent="World objects/Enemys" instance=ExtResource( 8 )]

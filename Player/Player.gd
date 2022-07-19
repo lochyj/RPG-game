@@ -17,12 +17,13 @@ enum {
 	ATTACK
 }
 
-# ------------------
-# State and velocity
-# ------------------
+# -------------------------
+# State, velocity and other
+# -------------------------
 var state = MOVE
 var velocity = Vector2.ZERO
-var rollVector = Vector2.LEFT
+var rollVector = Vector2.DOWN
+var stats = PlayerStats
 
 # ------------------------
 # Onready vars / Animation
@@ -37,6 +38,7 @@ onready var swordHitbox = $HitboxPivot/SwordHitbox
 # 	Ensures that the animationTree is active when the player is loaded
 # ------------------------------------------------------------------
 func _ready():
+	stats.connect("no_health", self, "queue_free")
 	animationTree.active = true
 	swordHitbox.knockback_vector = rollVector
 
@@ -107,3 +109,7 @@ func attack_state(delta):
 	
 func move():
 	velocity = move_and_slide(velocity)
+
+
+func _on_HurtBox_area_entered(area):
+	stats.health -= 1
