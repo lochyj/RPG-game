@@ -64,6 +64,7 @@ func attack_animation_finished():
 	
 func roll_animation_finished():
 	state = MOVE
+	PlayerStats.stamina -= 1
 	velocity = velocity / 2
 
 # -------------

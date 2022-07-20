@@ -4,3 +4,4 @@
 
 [node name="PlayerStats" instance=ExtResource( 1 )]
 maxHealth = 5
+maxStamina = 10
