@@ -13,6 +13,10 @@ func setInvincible(value):
 		emit_signal("invincibilityStarted")
 	else:
 		emit_signal("invincibilityEnded")
+		
+func startInvincibility(duration):
+	self.invincible = true
+	timer.start(duration)
 
 func createHitEffect():
 	var effect = HitEffect.instance()
@@ -20,10 +24,14 @@ func createHitEffect():
 	main.add_child(effect)
 	effect.global_position = global_position
 	
-func startInvincibility(duration):
-	self.invincible = true
-	timer.start(duration)
-
 
 func _on_Timer_timeout():
 	self.invincible = false
+
+
+func _on_HurtBox_invincibilityStarted():
+	set_deferred("monitoring", false)
+
+
+func _on_HurtBox_invincibilityEnded():
+	monitoring = true

@@ -543,24 +543,48 @@ tile_data = PoolIntArray( -393225, 0, 0, -393224, 0, 1, -393223, 0, 1, -393222, 
 [node name="World objects" type="YSort" parent="."]
 
 [node name="Player" parent="World objects" instance=ExtResource( 2 )]
-position = Vector2( -32, 104 )
+position = Vector2( 160, 88 )
 
 [node name="Enemys" type="YSort" parent="World objects"]
 
 [node name="Bat" parent="World objects/Enemys" instance=ExtResource( 8 )]
-position = Vector2( -152, -88 )
+position = Vector2( -240, 80 )
 
 [node name="Bat2" parent="World objects/Enemys" instance=ExtResource( 8 )]
-position = Vector2( -104, -72 )
+position = Vector2( -144, -72 )
 
 [node name="Bat3" parent="World objects/Enemys" instance=ExtResource( 8 )]
-position = Vector2( 8, -104 )
+position = Vector2( -80, -88 )
 
 [node name="Bat4" parent="World objects/Enemys" instance=ExtResource( 8 )]
-position = Vector2( 288, -72 )
+position = Vector2( 32, -72 )
 
 [node name="Bat5" parent="World objects/Enemys" instance=ExtResource( 8 )]
-position = Vector2( -240, 88 )
+position = Vector2( 336, -80 )
+
+[node name="Bat6" parent="World objects/Enemys" instance=ExtResource( 8 )]
+position = Vector2( 360, -56 )
+
+[node name="Bat7" parent="World objects/Enemys" instance=ExtResource( 8 )]
+position = Vector2( 320, -40 )
+
+[node name="Bat8" parent="World objects/Enemys" instance=ExtResource( 8 )]
+position = Vector2( 104, 344 )
+
+[node name="Bat9" parent="World objects/Enemys" instance=ExtResource( 8 )]
+position = Vector2( 120, 656 )
+
+[node name="Bat10" parent="World objects/Enemys" instance=ExtResource( 8 )]
+position = Vector2( 160, 608 )
+
+[node name="Bat11" parent="World objects/Enemys" instance=ExtResource( 8 )]
+position = Vector2( 264, 672 )
+
+[node name="Bat12" parent="World objects/Enemys" instance=ExtResource( 8 )]
+position = Vector2( 216, 696 )
+
+[node name="Bat13" parent="World objects/Enemys" instance=ExtResource( 8 )]
+position = Vector2( 232, 624 )
 
 [node name="Bushes" type="YSort" parent="World objects"]
 

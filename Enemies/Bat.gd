@@ -36,6 +36,7 @@ var knockback = Vector2.ZERO
 onready var stats = $Stats
 onready var playerDetectionZone = $PlayerDetectionZone
 onready var sprite = $AnimatedSprite
+onready var hurtbox = $HurtBox
 
 # ---------------
 # Physics process
@@ -61,6 +62,7 @@ func _physics_process(delta):
 func _on_HurtBox_area_entered(area):
 	stats.health -= area.damage
 	knockback = area.knockback_vector * 150
+	hurtbox.createHitEffect()
 
 func _on_Stats_no_health():
 	queue_free()

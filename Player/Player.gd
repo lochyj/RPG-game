@@ -31,6 +31,7 @@ var stats = PlayerStats
 onready var animationPlayer =  $AnimationPlayer
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
+onready var hurtbox = $HurtBox
 onready var swordHitbox = $HitboxPivot/SwordHitbox
 
 # ------------------------------------------------------------------
@@ -38,7 +39,7 @@ onready var swordHitbox = $HitboxPivot/SwordHitbox
 # 	Ensures that the animationTree is active when the player is loaded
 # ------------------------------------------------------------------
 func _ready():
-	stats.connect("no_health", self, "queue_free")
+	stats.connect("no_health", self, "reset")
 	animationTree.active = true
 	swordHitbox.knockback_vector = rollVector
 
@@ -64,7 +65,6 @@ func attack_animation_finished():
 	
 func roll_animation_finished():
 	state = MOVE
-	PlayerStats.stamina -= 1
 	velocity = velocity / 2
 
 # -------------
@@ -111,6 +111,10 @@ func attack_state(delta):
 func move():
 	velocity = move_and_slide(velocity)
 
+func reset():
+	queue_free()
 
 func _on_HurtBox_area_entered(area):
 	stats.health -= 1
+	hurtbox.startInvincibility(0.5)
+	hurtbox.createHitEffect()

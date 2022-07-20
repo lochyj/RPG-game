@@ -738,6 +738,17 @@ process_mode = 0
 smoothing_enabled = true
 smoothing_speed = 10.0
 
+[node name="Player UI" type="CanvasLayer" parent="."]
+
+[node name="Health" type="Control" parent="Player UI"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Player UI/Health"]
+margin_right = 72.0
+margin_bottom = 14.0
+text = "HP = 5"
+
 [connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
 
 [editable path="HitboxPivot/SwordHitbox"]
