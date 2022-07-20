@@ -669,6 +669,7 @@ height = 8.0
 [node name="Player" type="KinematicBody2D"]
 collision_layer = 2
 script = ExtResource( 1 )
+ROLL_MULTIPLIER = 2.2
 
 [node name="Shadow" type="Sprite" parent="."]
 position = Vector2( 0, 4 )
