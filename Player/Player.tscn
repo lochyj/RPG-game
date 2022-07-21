@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Shadows/MediumShadow.png" type="Texture" id=4]
 [ext_resource path="res://Player/SwordHitBox.gd" type="Script" id=5]
 [ext_resource path="res://Hurtboxes + Hitboxes/HurtBox.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Player/UI.gd" type="Script" id=7]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 4.0
@@ -740,14 +741,22 @@ smoothing_speed = 10.0
 
 [node name="Player UI" type="CanvasLayer" parent="."]
 
-[node name="Health" type="Control" parent="Player UI"]
+[node name="Control" type="Control" parent="Player UI"]
 margin_right = 40.0
 margin_bottom = 40.0
+script = ExtResource( 7 )
 
-[node name="Label" type="Label" parent="Player UI/Health"]
-margin_right = 72.0
-margin_bottom = 14.0
+[node name="Label" type="Label" parent="Player UI/Control"]
+margin_left = 1.0
+margin_top = 167.0
+margin_right = 43.0
+margin_bottom = 181.0
+hint_tooltip = "Player health"
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0, 0, 1 )
 text = "HP = 5"
+valign = 2
+uppercase = true
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
 

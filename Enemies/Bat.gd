@@ -44,7 +44,7 @@ onready var hurtbox = $HurtBox
 func _physics_process(delta):
 	knockback = knockback.move_toward(Vector2.ZERO, FRICTION * delta)
 	knockback = move_and_slide(knockback)
-	
+
 	match state:
 		IDLE:
 			Idle(delta)
@@ -52,9 +52,9 @@ func _physics_process(delta):
 			Wander(delta) # nothing here yet
 		CHASE:
 			Chase(delta)
-			
+
 	velocity = move_and_slide(velocity)
-	
+
 # -----------
 # Connections
 # -----------
@@ -69,7 +69,7 @@ func _on_Stats_no_health():
 	var enemyDeathEffect = EnemyDeathEffect.instance()
 	get_parent().add_child(enemyDeathEffect)
 	enemyDeathEffect.global_position = global_position
-	
+
 # -----------------------
 # State machine functions
 # -----------------------
@@ -77,7 +77,7 @@ func Idle(delta):
 	velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	seekPlayer()
 
-func Wander(delta):
+func Wander(_delta):
 	pass
 
 func Chase(delta):

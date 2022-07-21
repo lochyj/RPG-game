@@ -62,7 +62,7 @@ func _physics_process(delta):
 # -------------------
 func attack_animation_finished():
 	state = MOVE
-	
+
 func roll_animation_finished():
 	state = MOVE
 	velocity = velocity / 2
@@ -75,7 +75,7 @@ func move_state(delta):
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	input_vector = input_vector.normalized()
-	
+
 	if input_vector != Vector2.ZERO:
 		rollVector = input_vector
 		swordHitbox.knockback_vector = input_vector
@@ -91,30 +91,30 @@ func move_state(delta):
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 		animationState.travel("Idle")
-	
+
 	move()
-	
+
 	if Input.is_action_just_pressed("attack"):
 		state = ATTACK
 	if Input.is_action_just_pressed("roll"):
 		state = ROLL
 
-func roll_state(delta):
+func roll_state(_delta):
 	velocity = rollVector * MAX_SPEED * ROLL_MULTIPLIER
 	animationState.travel("Roll")
 	move()
 
-func attack_state(delta):
+func attack_state(_delta):
 	velocity = Vector2.ZERO
 	animationState.travel("Attack")
-	
+
 func move():
 	velocity = move_and_slide(velocity)
 
 func reset():
 	queue_free()
 
-func _on_HurtBox_area_entered(area):
+func _on_HurtBox_area_entered(_area):
 	stats.health -= 1
 	hurtbox.startInvincibility(0.5)
 	hurtbox.createHitEffect()
