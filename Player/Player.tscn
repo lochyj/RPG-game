@@ -14,11 +14,18 @@
 radius = 4.0
 height = 3.99999
 
+[sub_resource type="CapsuleShape2D" id=36]
+height = 12.0
+
+[sub_resource type="CapsuleShape2D" id=48]
+radius = 7.0
+height = 8.0
+
 [sub_resource type="Animation" id=25]
 resource_name = "AttackDown"
 length = 0.4
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -72,7 +79,7 @@ tracks/3/keys = {
 resource_name = "AttackLeft"
 length = 0.4
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -126,7 +133,7 @@ tracks/3/keys = {
 resource_name = "AttackRight"
 length = 0.4
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -180,7 +187,7 @@ tracks/3/keys = {
 resource_name = "AttackUp"
 length = 0.4
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -235,7 +242,7 @@ resource_name = "IdleDown"
 length = 0.1
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -252,7 +259,7 @@ resource_name = "IdleLeft"
 length = 0.1
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -269,7 +276,7 @@ resource_name = "IdleRight"
 length = 0.1
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -286,7 +293,7 @@ resource_name = "IdleUp"
 length = 0.1
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -301,7 +308,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=2]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -313,7 +320,7 @@ tracks/0/keys = {
 "values": [ 1 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Sprite:vframes")
+tracks/1/path = NodePath("PlayerSprite:vframes")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -353,7 +360,7 @@ tracks/3/keys = {
 resource_name = "RollDown"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -383,7 +390,7 @@ tracks/1/keys = {
 resource_name = "RollLeft"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -413,7 +420,7 @@ tracks/1/keys = {
 resource_name = "RollRight"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -443,7 +450,7 @@ tracks/1/keys = {
 resource_name = "RollUp"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -474,7 +481,7 @@ resource_name = "RunDown"
 length = 0.6
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -491,7 +498,7 @@ resource_name = "RunLeft"
 length = 0.6
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -508,7 +515,7 @@ resource_name = "RunRight"
 length = 0.6
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -525,7 +532,7 @@ resource_name = "RunUp"
 length = 0.6
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("PlayerSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -662,13 +669,6 @@ graph_offset = Vector2( -174, -47 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=17]
 
-[sub_resource type="CapsuleShape2D" id=36]
-height = 12.0
-
-[sub_resource type="CapsuleShape2D" id=48]
-radius = 7.0
-height = 8.0
-
 [node name="Player" type="KinematicBody2D"]
 collision_layer = 2
 script = ExtResource( 1 )
@@ -678,15 +678,61 @@ ROLL_MULTIPLIER = 2.2
 position = Vector2( 0, 4 )
 texture = ExtResource( 4 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="PlayerSprite" type="Sprite" parent="."]
 position = Vector2( 0, -9 )
 texture = ExtResource( 2 )
 hframes = 60
 frame = 1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="TerrainCollider" type="CollisionShape2D" parent="."]
+visible = false
 rotation = -1.5708
 shape = SubResource( 1 )
+
+[node name="HitboxPivot" type="Position2D" parent="."]
+visible = false
+position = Vector2( 0, -4 )
+
+[node name="SwordHitbox" parent="HitboxPivot" instance=ExtResource( 3 )]
+position = Vector2( 15, 0 )
+collision_mask = 8
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" parent="HitboxPivot/SwordHitbox" index="0"]
+shape = SubResource( 36 )
+disabled = true
+
+[node name="HurtBox" parent="." instance=ExtResource( 6 )]
+visible = false
+collision_layer = 4
+
+[node name="CollisionShape2D" parent="HurtBox" index="0"]
+position = Vector2( 0, -8 )
+shape = SubResource( 48 )
+
+[node name="Stuff" type="Node2D" parent="."]
+
+[node name="Player UI" type="CanvasLayer" parent="Stuff"]
+
+[node name="Control" type="Control" parent="Stuff/Player UI"]
+margin_right = 40.0
+margin_bottom = 12.0
+script = ExtResource( 7 )
+
+[node name="HeartUIEmpty" type="TextureRect" parent="Stuff/Player UI/Control"]
+margin_right = 75.0
+margin_bottom = 11.0
+texture = ExtResource( 8 )
+stretch_mode = 2
+
+[node name="HeartUIFull" type="TextureRect" parent="Stuff/Player UI/Control"]
+margin_right = 60.0
+margin_bottom = 11.0
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 2
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Stuff"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/AttackDown = SubResource( 25 )
@@ -715,51 +761,6 @@ parameters/Attack/blend_position = Vector2( 0, 1 )
 parameters/Idle/blend_position = Vector2( 0, 1 )
 parameters/Roll/blend_position = Vector2( 0, 1 )
 parameters/Run/blend_position = Vector2( 0, 1 )
-
-[node name="HitboxPivot" type="Position2D" parent="."]
-position = Vector2( 0, -4 )
-
-[node name="SwordHitbox" parent="HitboxPivot" instance=ExtResource( 3 )]
-position = Vector2( 15, 0 )
-collision_mask = 8
-script = ExtResource( 5 )
-
-[node name="CollisionShape2D" parent="HitboxPivot/SwordHitbox" index="0"]
-shape = SubResource( 36 )
-disabled = true
-
-[node name="HurtBox" parent="." instance=ExtResource( 6 )]
-collision_layer = 4
-
-[node name="CollisionShape2D" parent="HurtBox" index="0"]
-position = Vector2( 0, -8 )
-shape = SubResource( 48 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-current = true
-process_mode = 0
-smoothing_enabled = true
-smoothing_speed = 10.0
-
-[node name="Player UI" type="CanvasLayer" parent="."]
-
-[node name="Control" type="Control" parent="Player UI"]
-margin_right = 40.0
-margin_bottom = 12.0
-script = ExtResource( 7 )
-
-[node name="HeartUIEmpty" type="TextureRect" parent="Player UI/Control"]
-margin_right = 75.0
-margin_bottom = 11.0
-texture = ExtResource( 8 )
-stretch_mode = 2
-
-[node name="HeartUIFull" type="TextureRect" parent="Player UI/Control"]
-margin_right = 60.0
-margin_bottom = 11.0
-texture = ExtResource( 9 )
-expand = true
-stretch_mode = 2
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
 

@@ -64,6 +64,9 @@ func attack_animation_finished():
 	state = MOVE
 
 func roll_animation_finished():
+	# Evasion script
+	hurtbox.set_collision_layer_bit(2, true)
+	# ---
 	state = MOVE
 	velocity = velocity / 2
 
@@ -100,6 +103,9 @@ func move_state(delta):
 		state = ROLL
 
 func roll_state(_delta):
+	# Evasion script
+	hurtbox.set_collision_layer_bit(2, false)
+	# ---
 	velocity = rollVector * MAX_SPEED * ROLL_MULTIPLIER
 	animationState.travel("Roll")
 	move()

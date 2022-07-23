@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://World/Foliage/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://World/Foliage/Interactable/Grass.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Tilesets/Grass tileset.png" type="Texture" id=7]
 [ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Player/Elements/Camera.tscn" type="PackedScene" id=9]
 
 [sub_resource type="TileSet" id=63]
 0/name = "Grass tileset.png 0"
@@ -508,6 +509,8 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 0/z_index = 0
 
+[sub_resource type="AnimationNodeStateMachinePlayback" id=64]
+
 [node name="World" type="Node2D"]
 __meta__ = {
 "_edit_lock_": true
@@ -536,8 +539,17 @@ tile_data = PoolIntArray( -393225, 0, 0, -393224, 0, 1, -393223, 0, 1, -393222, 
 
 [node name="World objects" type="YSort" parent="."]
 
+[node name="Camera" parent="World objects" instance=ExtResource( 9 )]
+position = Vector2( 160, 88 )
+
 [node name="Player" parent="World objects" instance=ExtResource( 2 )]
 position = Vector2( 160, 88 )
+
+[node name="RemoteTransform2D" parent="World objects/Player/Stuff" index="1"]
+remote_path = NodePath("../../../Camera")
+
+[node name="AnimationTree" parent="World objects/Player" index="7"]
+parameters/playback = SubResource( 64 )
 
 [node name="Enemys" type="YSort" parent="World objects"]
 
@@ -2519,3 +2531,10 @@ position = Vector2( -24, 160 )
 
 [node name="Tree2" parent="World objects/Trees" instance=ExtResource( 3 )]
 position = Vector2( 200, 48 )
+
+[node name="Bat" parent="." instance=ExtResource( 8 )]
+position = Vector2( 40, 96 )
+
+[editable path="World objects/Player"]
+[editable path="World objects/Player/HitboxPivot/SwordHitbox"]
+[editable path="World objects/Player/HurtBox"]

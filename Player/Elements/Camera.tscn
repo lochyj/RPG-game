@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="Camera" type="Node2D"]
+
+[node name="Camera" type="Camera2D" parent="."]
+current = true
+process_mode = 0
+smoothing_enabled = true
+smoothing_speed = 10.0

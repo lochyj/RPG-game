@@ -7,6 +7,8 @@ extends KinematicBody2D
 export(int) var FRICTION = 400
 export(int) var MAX_SPEED = 50
 export(int) var ACCELERATION = 200
+export(int) var PUSH_VALUE = 400
+export(int) var WANDER_RANGE = 4
 
 # --------
 # Preloads
@@ -37,6 +39,8 @@ onready var stats = $Stats
 onready var playerDetectionZone = $PlayerDetectionZone
 onready var sprite = $AnimatedSprite
 onready var hurtbox = $HurtBox
+onready var softCollision = $SoftCollision
+onready var wanderController = $WanderController
 
 # ---------------
 # Physics process
@@ -53,6 +57,8 @@ func _physics_process(delta):
 		CHASE:
 			Chase(delta)
 
+	if softCollision.isColliding():
+		velocity += softCollision.getPushVector() * delta * PUSH_VALUE
 	velocity = move_and_slide(velocity)
 
 # -----------
@@ -76,14 +82,28 @@ func _on_Stats_no_health():
 func Idle(delta):
 	velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	seekPlayer()
+	if wanderController.getTimeLeft() == 0:
+		state = pickRandState([IDLE, WANDER])
+		wanderController.startTimer(rand_range(1, 3))
 
-func Wander(_delta):
-	pass
+func Wander(delta):
+	seekPlayer()
+	if wanderController.getTimeLeft() == 0:
+		state = pickRandState([IDLE, WANDER])
+		wanderController.startTimer(rand_range(1, 3))
+
+	var direction = global_position.direction_to(wanderController.targetPos)
+	velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
+
+	if global_position.distance_to(wanderController.targetPos) <= WANDER_RANGE:
+		state = pickRandState([IDLE, WANDER])
+		wanderController.startTimer(rand_range(1, 3))
+	sprite.flip_h = velocity.x < 0
 
 func Chase(delta):
 	var player = playerDetectionZone.player
 	if player != null:
-		var direction = (player.global_position - global_position).normalized()
+		var direction = global_position.direction_to(player.global_position)
 		velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
 	else:
 		state = IDLE
@@ -95,3 +115,7 @@ func Chase(delta):
 func seekPlayer():
 	if playerDetectionZone.canSeePlayer():
 		state = CHASE
+
+func pickRandState(stateList):
+	stateList.shuffle()
+	return stateList.pop_front()
