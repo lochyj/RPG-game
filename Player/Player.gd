@@ -37,11 +37,13 @@ onready var swordHitbox = $HitboxPivot/SwordHitbox
 # ------------------------------------------------------------------
 # _ready():
 # 	Ensures that the animationTree is active when the player is loaded
+#	Randomises the random seed
 # ------------------------------------------------------------------
 func _ready():
 	stats.connect("no_health", self, "reset")
 	animationTree.active = true
 	swordHitbox.knockback_vector = rollVector
+	randomize()
 
 # -------------------------------------------------------------------------------------------------
 # Uses _physics_process because we access the move_and_slide() method within a subsequent function,

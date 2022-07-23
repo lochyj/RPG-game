@@ -22,6 +22,8 @@ config/windows_native_icon="res://favicon.ico"
 [autoload]
 
 PlayerStats="*res://Player/PlayerStats.tscn"
+SceneChanger="*res://UI/SeneChanger/SceneChanger.tscn"
+Global="*res://Global.gd"
 
 [display]
 

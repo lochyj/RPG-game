@@ -6,6 +6,9 @@ onready var startPos = global_position
 onready var targetPos = global_position
 onready var timer = $Timer
 
+func _ready():
+	updateTargetPos()
+
 func updateTargetPos():
 	var targetVector = Vector2(rand_range(-wanderRange, wanderRange), rand_range(-wanderRange, wanderRange))
 	targetPos = startPos + targetVector

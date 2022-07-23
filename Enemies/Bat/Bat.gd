@@ -42,6 +42,12 @@ onready var hurtbox = $HurtBox
 onready var softCollision = $SoftCollision
 onready var wanderController = $WanderController
 
+
+func _ready():
+	state = pickRandState([IDLE, WANDER])
+	# Randomises the bat animation so they arent in sync
+	sprite.frame = rand_range(0, 4)
+
 # ---------------
 # Physics process
 # ---------------
@@ -79,21 +85,17 @@ func _on_Stats_no_health():
 # -----------------------
 # State machine functions
 # -----------------------
+
 func Idle(delta):
 	velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	seekPlayer()
-	if wanderController.getTimeLeft() == 0:
-		state = pickRandState([IDLE, WANDER])
-		wanderController.startTimer(rand_range(1, 3))
+	timeOut()
 
 func Wander(delta):
 	seekPlayer()
-	if wanderController.getTimeLeft() == 0:
-		state = pickRandState([IDLE, WANDER])
-		wanderController.startTimer(rand_range(1, 3))
-
-	var direction = global_position.direction_to(wanderController.targetPos)
-	velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
+	timeOut()
+	var direction = setDirection(wanderController.targetPos)
+	setVelocity(direction, delta)
 
 	if global_position.distance_to(wanderController.targetPos) <= WANDER_RANGE:
 		state = pickRandState([IDLE, WANDER])
@@ -103,8 +105,8 @@ func Wander(delta):
 func Chase(delta):
 	var player = playerDetectionZone.player
 	if player != null:
-		var direction = global_position.direction_to(player.global_position)
-		velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
+		var direction = setDirection(player.global_position)
+		setVelocity(direction, delta)
 	else:
 		state = IDLE
 	sprite.flip_h = velocity.x < 0
@@ -115,6 +117,17 @@ func Chase(delta):
 func seekPlayer():
 	if playerDetectionZone.canSeePlayer():
 		state = CHASE
+
+func timeOut():
+	if wanderController.getTimeLeft() == 0:
+		state = pickRandState([IDLE, WANDER])
+		wanderController.startTimer(rand_range(1, 3))
+
+func setVelocity(direction, delta):
+	velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
+
+func setDirection(dir):
+	return global_position.direction_to(dir)
 
 func pickRandState(stateList):
 	stateList.shuffle()
