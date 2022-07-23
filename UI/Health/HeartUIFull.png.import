@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Grass tileset.png-f5be6d38d50b0b02cba9e0a89b391738.stex"
+path="res://.import/HeartUIFull.png-237494552bb97f7250d420d3ef95ce45.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/Grass tileset.png"
-dest_files=[ "res://.import/Grass tileset.png-f5be6d38d50b0b02cba9e0a89b391738.stex" ]
+source_file="res://UI/Health/HeartUIFull.png"
+dest_files=[ "res://.import/HeartUIFull.png-237494552bb97f7250d420d3ef95ce45.stex" ]
 
 [params]
 

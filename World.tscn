@@ -1,11 +1,12 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=59 format=2]
 
-[ext_resource path="res://World/Bush.tscn" type="PackedScene" id=1]
+[ext_resource path="res://World/Foliage/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://World/DirtTileset.png" type="Texture" id=4]
-[ext_resource path="res://World/CliffTileset.png" type="Texture" id=5]
-[ext_resource path="res://World/Grass.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/Grass tileset.png" type="Texture" id=7]
+[ext_resource path="res://World/Foliage/Tree.tscn" type="PackedScene" id=3]
+[ext_resource path="res://World/Tilesets/DirtTileset.png" type="Texture" id=4]
+[ext_resource path="res://World/Tilesets/CliffTileset.png" type="Texture" id=5]
+[ext_resource path="res://World/Foliage/Interactable/Grass.tscn" type="PackedScene" id=6]
+[ext_resource path="res://World/Tilesets/Grass tileset.png" type="Texture" id=7]
 [ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=8]
 
 [sub_resource type="TileSet" id=63]
@@ -581,1924 +582,1940 @@ position = Vector2( 232, 624 )
 
 [node name="Bushes" type="YSort" parent="World objects"]
 
-[node name="Bush" parent="World objects/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 208, 40 )
+[node name="0 - 100" type="YSort" parent="World objects/Bushes"]
 
-[node name="Bush2" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush2" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 232, 56 )
 
-[node name="Bush3" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush3" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 240, 32 )
 
-[node name="Bush6" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush6" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 256, 16 )
 
-[node name="Bush8" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush8" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 280, 24 )
 
-[node name="Bush9" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush9" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 304, 16 )
 
-[node name="Bush10" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush10" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 16, 40 )
 
-[node name="Bush11" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush11" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 40, 24 )
 
-[node name="Bush12" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush12" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 64, 40 )
 
-[node name="Bush13" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush13" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 72, 16 )
 
-[node name="Bush14" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush14" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 8, 72 )
 
-[node name="Bush15" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush15" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 64, 72 )
 
-[node name="Bush16" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush16" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 136, 152 )
 
-[node name="Bush4" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush4" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 16, 152 )
 
-[node name="Bush5" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush5" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 56, 168 )
 
-[node name="Bush7" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush7" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 96, 152 )
 
-[node name="Bush17" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush17" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -112, -8 )
 
-[node name="Bush18" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush18" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -160, -40 )
 
-[node name="Bush19" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush19" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -320, 96 )
 
-[node name="Bush20" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush20" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -360, 72 )
 
-[node name="Bush21" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush21" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -328, 64 )
 
-[node name="Bush22" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush22" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -360, 120 )
 
-[node name="Bush23" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush23" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -136, 216 )
 
-[node name="Bush24" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush24" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -112, 216 )
 
-[node name="Bush25" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush25" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -88, 224 )
 
-[node name="Bush26" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush26" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -48, 208 )
 
-[node name="Bush27" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush27" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -24, 224 )
 
-[node name="Bush29" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush29" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -288, 184 )
 
-[node name="Bush31" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush31" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -240, 200 )
 
-[node name="Bush33" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush33" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -128, 160 )
 
-[node name="Bush34" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush34" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -80, 152 )
 
-[node name="Bush35" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush35" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -56, 168 )
 
-[node name="Bush36" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush36" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -144, 24 )
 
-[node name="Bush37" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush37" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -120, 32 )
 
-[node name="Bush38" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush38" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -88, 24 )
 
-[node name="Bush39" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush39" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -48, 40 )
 
-[node name="Bush40" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush40" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -368, -16 )
 
-[node name="Bush30" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush30" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -208, 184 )
 
-[node name="Bush32" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush32" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -368, 192 )
 
-[node name="Bush41" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush41" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -368, 216 )
 
-[node name="Bush42" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush42" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -176, 64 )
 
-[node name="Bush43" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush43" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -48, 72 )
 
-[node name="Bush44" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush44" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -56, 120 )
 
-[node name="Bush45" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush45" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -256, 56 )
 
-[node name="Bush46" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush46" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -264, 152 )
 
-[node name="Bush47" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush47" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -424, 24 )
 
-[node name="Bush48" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush48" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -416, 56 )
 
-[node name="Bush49" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush49" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -432, 112 )
 
-[node name="Bush50" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush50" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -408, 152 )
 
-[node name="Bush51" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush51" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -48, -24 )
 
-[node name="Bush52" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush52" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 72, -40 )
 
-[node name="Bush53" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush53" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 40, -8 )
 
-[node name="Bush54" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush54" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 24, -48 )
 
-[node name="Bush55" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush55" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -48, -24 )
 
-[node name="Bush56" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush56" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -176, -112 )
 
-[node name="Bush57" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush57" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -104, -104 )
 
-[node name="Bush58" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush58" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -72, -112 )
 
-[node name="Bush59" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush59" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -32, -104 )
 
-[node name="Bush60" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush60" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 80, -120 )
 
-[node name="Bush61" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush61" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 104, -104 )
 
-[node name="Bush62" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush62" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 48, -104 )
 
-[node name="Bush63" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush63" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 160, -88 )
 
-[node name="Bush64" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush64" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 136, -120 )
 
-[node name="Bush65" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush65" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -256, -80 )
 
-[node name="Bush66" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush66" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -232, -112 )
 
-[node name="Bush67" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush67" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -256, -128 )
 
-[node name="Bush68" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush68" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -120, -184 )
 
-[node name="Bush69" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush69" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -88, -168 )
 
-[node name="Bush70" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush70" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -160, -192 )
 
-[node name="Bush71" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush71" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -80, -200 )
 
-[node name="Bush72" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush72" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -152, -168 )
 
-[node name="Bush73" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush73" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -16, -184 )
 
-[node name="Bush74" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush74" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -48, -168 )
 
-[node name="Bush75" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush75" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 80, -200 )
 
-[node name="Bush76" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush76" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 56, -184 )
 
-[node name="Bush77" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush77" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 88, -168 )
 
-[node name="Bush78" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush78" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 136, -200 )
 
-[node name="Bush79" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush79" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 152, -176 )
 
-[node name="Bush80" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush80" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 256, -200 )
 
-[node name="Bush81" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush81" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 200, -176 )
 
-[node name="Bush82" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush82" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 216, -104 )
 
-[node name="Bush83" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush83" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 240, -8 )
 
-[node name="Bush84" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush84" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 328, 0 )
 
-[node name="Bush85" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush85" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 280, -8 )
 
-[node name="Bush86" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush86" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 312, -16 )
 
-[node name="Bush87" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush87" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 328, -104 )
 
-[node name="Bush88" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush88" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -248, -40 )
 
-[node name="Bush89" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush89" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -224, -24 )
 
-[node name="Bush90" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush90" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( -272, -16 )
 
-[node name="Bush91" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush91" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 320, 56 )
 
-[node name="Bush92" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush92" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 288, 80 )
 
-[node name="Bush93" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush93" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 304, 96 )
 
-[node name="Bush28" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush28" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 48, 480 )
 
-[node name="Bush94" parent="World objects/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 208, 40 )
-
-[node name="Bush95" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush95" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 232, 56 )
 
-[node name="Bush96" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush96" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 240, 32 )
 
-[node name="Bush97" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush97" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 256, 16 )
 
-[node name="Bush98" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush98" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 280, 24 )
 
-[node name="Bush99" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush99" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 304, 16 )
 
-[node name="Bush100" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush100" parent="World objects/Bushes/0 - 100" instance=ExtResource( 1 )]
 position = Vector2( 16, 40 )
 
-[node name="Bush101" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="101 - 200" type="YSort" parent="World objects/Bushes"]
+
+[node name="Bush101" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 40, 24 )
 
-[node name="Bush102" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush102" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 64, 40 )
 
-[node name="Bush103" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush103" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 72, 16 )
 
-[node name="Bush104" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush104" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 8, 72 )
 
-[node name="Bush105" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush105" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 64, 72 )
 
-[node name="Bush106" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush106" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 136, 152 )
 
-[node name="Bush107" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush107" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 16, 152 )
 
-[node name="Bush108" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush108" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 56, 168 )
 
-[node name="Bush109" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush109" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 96, 152 )
 
-[node name="Bush110" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush110" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -112, -8 )
 
-[node name="Bush111" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush111" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -160, -40 )
 
-[node name="Bush112" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush112" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -320, 96 )
 
-[node name="Bush113" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush113" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -360, 72 )
 
-[node name="Bush114" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush114" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -328, 64 )
 
-[node name="Bush115" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush115" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -360, 120 )
 
-[node name="Bush116" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush116" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -136, 216 )
 
-[node name="Bush117" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush117" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -112, 216 )
 
-[node name="Bush118" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush118" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -88, 224 )
 
-[node name="Bush274" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush274" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -248, 240 )
 
-[node name="Bush283" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush283" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -192, 248 )
 
-[node name="Bush284" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush284" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -336, 264 )
 
-[node name="Bush285" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush285" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -256, 280 )
 
-[node name="Bush286" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush286" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -256, 280 )
 
-[node name="Bush119" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush119" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -48, 208 )
 
-[node name="Bush120" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush120" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -24, 224 )
 
-[node name="Bush121" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush121" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -288, 184 )
 
-[node name="Bush122" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush122" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -240, 200 )
 
-[node name="Bush123" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush123" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -128, 160 )
 
-[node name="Bush124" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush124" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -80, 152 )
 
-[node name="Bush125" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush125" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -56, 168 )
 
-[node name="Bush126" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush126" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -144, 24 )
 
-[node name="Bush127" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush127" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -120, 32 )
 
-[node name="Bush128" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush128" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -88, 24 )
 
-[node name="Bush129" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush129" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -48, 40 )
 
-[node name="Bush130" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush130" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -368, -16 )
 
-[node name="Bush131" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush131" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -208, 184 )
 
-[node name="Bush132" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush132" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -368, 192 )
 
-[node name="Bush133" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush133" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -368, 216 )
 
-[node name="Bush134" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush134" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -176, 64 )
 
-[node name="Bush135" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush135" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -48, 72 )
 
-[node name="Bush136" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush136" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -56, 120 )
 
-[node name="Bush137" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush137" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -256, 56 )
 
-[node name="Bush138" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush138" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -264, 152 )
 
-[node name="Bush139" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush139" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -424, 24 )
 
-[node name="Bush140" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush140" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -416, 56 )
 
-[node name="Bush141" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush141" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -432, 112 )
 
-[node name="Bush142" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush142" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -408, 152 )
 
-[node name="Bush143" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush143" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -48, -24 )
 
-[node name="Bush144" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush144" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 72, -40 )
 
-[node name="Bush145" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush145" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 40, -8 )
 
-[node name="Bush146" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush146" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 24, -48 )
 
-[node name="Bush147" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush147" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -48, -24 )
 
-[node name="Bush148" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush148" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -176, -112 )
 
-[node name="Bush149" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush149" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -104, -104 )
 
-[node name="Bush150" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush150" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -72, -112 )
 
-[node name="Bush151" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush151" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -32, -104 )
 
-[node name="Bush152" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush152" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 80, -120 )
 
-[node name="Bush153" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush153" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 104, -104 )
 
-[node name="Bush154" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush154" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 48, -104 )
 
-[node name="Bush155" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush155" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 160, -88 )
 
-[node name="Bush156" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush156" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 136, -120 )
 
-[node name="Bush157" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush157" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -256, -80 )
 
-[node name="Bush158" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush158" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -232, -112 )
 
-[node name="Bush159" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush159" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -256, -128 )
 
-[node name="Bush275" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush275" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -320, -112 )
 
-[node name="Bush278" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush278" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -304, -200 )
 
-[node name="Bush279" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush279" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -344, -176 )
 
-[node name="Bush280" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush280" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -344, -40 )
 
-[node name="Bush281" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush281" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -400, 184 )
 
-[node name="Bush282" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush282" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -400, -16 )
 
-[node name="Bush276" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush276" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -304, -72 )
 
-[node name="Bush277" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush277" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -304, -72 )
 
-[node name="Bush160" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush160" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -120, -184 )
 
-[node name="Bush161" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush161" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -88, -168 )
 
-[node name="Bush162" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush162" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -160, -192 )
 
-[node name="Bush163" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush163" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -80, -200 )
 
-[node name="Bush164" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush164" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -152, -168 )
 
-[node name="Bush165" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush165" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -16, -184 )
 
-[node name="Bush166" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush166" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -48, -168 )
 
-[node name="Bush167" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush167" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 80, -200 )
 
-[node name="Bush168" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush168" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 56, -184 )
 
-[node name="Bush169" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush169" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 88, -168 )
 
-[node name="Bush170" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush170" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 136, -200 )
 
-[node name="Bush171" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush171" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 152, -176 )
 
-[node name="Bush172" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush172" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 256, -200 )
 
-[node name="Bush173" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush173" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 200, -176 )
 
-[node name="Bush174" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush174" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 216, -104 )
 
-[node name="Bush175" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush175" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 240, -8 )
 
-[node name="Bush176" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush176" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 328, 0 )
 
-[node name="Bush177" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush177" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 280, -8 )
 
-[node name="Bush178" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush178" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 312, -16 )
 
-[node name="Bush179" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush179" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 328, -104 )
 
-[node name="Bush180" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush180" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -248, -40 )
 
-[node name="Bush181" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush181" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -224, -24 )
 
-[node name="Bush182" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush182" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -272, -16 )
 
-[node name="Bush183" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush183" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 320, 56 )
 
-[node name="Bush184" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush184" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 240, 72 )
 
-[node name="Bush185" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush185" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 304, 96 )
 
-[node name="Bush186" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush186" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 120, 448 )
 
-[node name="Bush187" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush187" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 104, 488 )
 
-[node name="Bush188" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush188" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 40, 424 )
 
-[node name="Bush189" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush189" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 24, 456 )
 
-[node name="Bush190" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush190" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 72, 448 )
 
-[node name="Bush191" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush191" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( -8, 384 )
 
-[node name="Bush192" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush192" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 8, 344 )
 
-[node name="Bush193" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush193" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 96, 408 )
 
-[node name="Bush194" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush194" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 144, 368 )
 
-[node name="Bush195" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush195" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 136, 400 )
 
-[node name="Bush196" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush196" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 80, 312 )
 
-[node name="Bush197" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush197" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 176, 280 )
 
-[node name="Bush198" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush198" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 192, 240 )
 
-[node name="Bush199" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush199" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 176, 208 )
 
-[node name="Bush200" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush200" parent="World objects/Bushes/101 - 200" instance=ExtResource( 1 )]
 position = Vector2( 64, 200 )
 
-[node name="Bush201" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="201 - 300" type="YSort" parent="World objects/Bushes"]
+
+[node name="Bush201" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 128, 192 )
 
-[node name="Bush202" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush202" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 136, 224 )
 
-[node name="Bush203" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush203" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 72, 256 )
 
-[node name="Bush204" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush204" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 96, 224 )
 
-[node name="Bush205" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush205" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 120, 256 )
 
-[node name="Bush206" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush206" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 24, 280 )
 
-[node name="Bush207" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush207" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -56, 280 )
 
-[node name="Bush208" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush208" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 8, 248 )
 
-[node name="Bush209" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush209" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -16, 272 )
 
-[node name="Bush210" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush210" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -56, 312 )
 
-[node name="Bush211" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush211" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -24, 448 )
 
-[node name="Bush212" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush212" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -48, 416 )
 
-[node name="Bush213" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush213" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -72, 384 )
 
-[node name="Bush214" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush214" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -48, 368 )
 
-[node name="Bush215" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush215" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -56, 488 )
 
-[node name="Bush216" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush216" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -48, 464 )
 
-[node name="Bush217" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush217" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -64, 432 )
 
-[node name="Bush218" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush218" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -48, 512 )
 
-[node name="Bush219" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush219" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -64, 544 )
 
-[node name="Bush220" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush220" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -48, 568 )
 
-[node name="Bush221" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush221" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -80, 520 )
 
-[node name="Bush222" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush222" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -80, 584 )
 
-[node name="Bush223" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush223" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -80, 624 )
 
-[node name="Bush224" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush224" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -96, 648 )
 
-[node name="Bush225" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush225" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -104, 608 )
 
-[node name="Bush226" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush226" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -80, 680 )
 
-[node name="Bush227" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush227" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -88, 736 )
 
-[node name="Bush228" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush228" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -48, 768 )
 
-[node name="Bush229" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush229" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -56, 800 )
 
-[node name="Bush230" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush230" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -24, 856 )
 
-[node name="Bush231" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush231" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 8, 880 )
 
-[node name="Bush232" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush232" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 96, 888 )
 
-[node name="Bush233" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush233" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 56, 888 )
 
-[node name="Bush234" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush234" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 72, 912 )
 
-[node name="Bush235" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush235" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 128, 888 )
 
-[node name="Bush236" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush236" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 176, 920 )
 
-[node name="Bush237" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush237" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 200, 912 )
 
-[node name="Bush238" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush238" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 216, 928 )
 
-[node name="Bush239" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush239" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 248, 888 )
 
-[node name="Bush240" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush240" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 264, 880 )
 
-[node name="Bush241" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush241" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 304, 856 )
 
-[node name="Bush242" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush242" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 328, 840 )
 
-[node name="Bush243" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush243" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 344, 859 )
 
-[node name="Bush244" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush244" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 376, 880 )
 
-[node name="Bush245" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush245" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 400, 904 )
 
-[node name="Bush246" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush246" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 464, 880 )
 
-[node name="Bush247" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush247" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 496, 872 )
 
-[node name="Bush248" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush248" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 528, 840 )
 
-[node name="Bush249" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush249" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 560, 800 )
 
-[node name="Bush250" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush250" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 528, 760 )
 
-[node name="Bush251" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush251" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 560, 712 )
 
-[node name="Bush252" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush252" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 512, 688 )
 
-[node name="Bush253" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush253" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 520, 664 )
 
-[node name="Bush254" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush254" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 528, 624 )
 
-[node name="Bush255" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush255" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 528, 600 )
 
-[node name="Bush256" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush256" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 504, 536 )
 
-[node name="Bush257" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush257" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 536, 576 )
 
-[node name="Bush258" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush258" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 488, 472 )
 
-[node name="Bush259" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush259" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 464, 448 )
 
-[node name="Bush260" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush260" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 416, 440 )
 
-[node name="Bush261" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush261" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 48, 640 )
 
-[node name="Bush262" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush262" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 56, 600 )
 
-[node name="Bush263" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush263" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 80, 568 )
 
-[node name="Bush264" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush264" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 56, 688 )
 
-[node name="Bush265" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush265" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 80, 728 )
 
-[node name="Bush266" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush266" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 80, 728 )
 
-[node name="Bush267" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush267" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 352, 728 )
 
-[node name="Bush268" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush268" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 400, 688 )
 
-[node name="Bush269" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush269" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 384, 728 )
 
-[node name="Bush270" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush270" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 376, 648 )
 
-[node name="Bush271" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush271" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 376, 608 )
 
-[node name="Bush272" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush272" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 336, 560 )
 
-[node name="Bush273" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush273" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 352, 584 )
 
-[node name="Bush287" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush287" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -64, 352 )
 
-[node name="Bush288" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush288" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 48, 352 )
 
-[node name="Bush289" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush289" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 48, 328 )
 
-[node name="Bush290" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush290" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 64, 376 )
 
-[node name="Bush291" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush291" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 64, 376 )
 
-[node name="Bush292" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush292" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 0, 544 )
 
-[node name="Bush293" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush293" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 48, 528 )
 
-[node name="Bush294" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush294" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -16, 624 )
 
-[node name="Bush295" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush295" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 0, 616 )
 
-[node name="Bush296" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush296" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 8, 664 )
 
-[node name="Bush297" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush297" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( -24, 648 )
 
-[node name="Bush298" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush298" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 16, 640 )
 
-[node name="Bush299" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush299" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 16, 720 )
 
-[node name="Bush300" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush300" parent="World objects/Bushes/201 - 300" instance=ExtResource( 1 )]
 position = Vector2( 32, 728 )
 
-[node name="Bush301" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="301 - 400" type="YSort" parent="World objects/Bushes"]
+
+[node name="Bush301" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( -8, 768 )
 
-[node name="Bush302" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush302" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 24, 760 )
 
-[node name="Bush303" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush303" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 48, 792 )
 
-[node name="Bush304" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush304" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 64, 768 )
 
-[node name="Bush305" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush305" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 72, 824 )
 
-[node name="Bush306" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush306" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 104, 800 )
 
-[node name="Bush307" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush307" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 104, 768 )
 
-[node name="Bush308" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush308" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 128, 768 )
 
-[node name="Bush309" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush309" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 152, 752 )
 
-[node name="Bush310" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush310" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 208, 760 )
 
-[node name="Bush311" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush311" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 272, 800 )
 
-[node name="Bush312" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush312" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 312, 776 )
 
-[node name="Bush313" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush313" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 232, 824 )
 
-[node name="Bush314" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush314" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 368, 768 )
 
-[node name="Bush315" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush315" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 400, 776 )
 
-[node name="Bush316" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush316" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 352, 792 )
 
-[node name="Bush317" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush317" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 400, 832 )
 
-[node name="Bush318" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush318" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 440, 728 )
 
-[node name="Bush319" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush319" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 464, 696 )
 
-[node name="Bush320" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush320" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 440, 672 )
 
-[node name="Bush321" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush321" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 472, 648 )
 
-[node name="Bush322" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush322" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 344, 488 )
 
-[node name="Bush323" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush323" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 384, 472 )
 
-[node name="Bush324" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush324" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 368, 528 )
 
-[node name="Bush325" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush325" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 400, 504 )
 
-[node name="Bush326" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush326" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 352, 448 )
 
-[node name="Bush327" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush327" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 320, 440 )
 
-[node name="Bush328" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush328" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 328, 392 )
 
-[node name="Bush329" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush329" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 376, 408 )
 
-[node name="Bush330" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush330" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 392, 368 )
 
-[node name="Bush331" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush331" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 384, 344 )
 
-[node name="Bush332" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush332" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 400, 304 )
 
-[node name="Bush333" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush333" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 376, 272 )
 
-[node name="Bush334" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush334" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 312, 256 )
 
-[node name="Bush335" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush335" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 336, 280 )
 
-[node name="Bush336" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush336" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 320, 304 )
 
-[node name="Bush337" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush337" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 320, 304 )
 
-[node name="Bush338" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush338" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 376, 240 )
 
-[node name="Bush339" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush339" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 400, 216 )
 
-[node name="Bush340" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush340" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 376, 176 )
 
-[node name="Bush341" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush341" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 376, 80 )
 
-[node name="Bush342" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush342" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 424, 48 )
 
-[node name="Bush343" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush343" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 456, 88 )
 
-[node name="Bush344" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush344" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 488, 80 )
 
-[node name="Bush345" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush345" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 488, 80 )
 
-[node name="Bush346" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush346" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 464, 48 )
 
-[node name="Bush347" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush347" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 416, 96 )
 
-[node name="Bush348" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush348" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 496, 144 )
 
-[node name="Bush349" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush349" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 512, 120 )
 
-[node name="Bush350" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush350" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 528, 144 )
 
-[node name="Bush351" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush351" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 456, -24 )
 
-[node name="Bush352" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush352" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 440, 0 )
 
-[node name="Bush353" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush353" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 456, 16 )
 
-[node name="Bush354" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush354" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 472, -64 )
 
-[node name="Bush355" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush355" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 440, -88 )
 
-[node name="Bush356" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush356" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 464, -120 )
 
-[node name="Bush357" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush357" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 440, -152 )
 
-[node name="Bush358" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush358" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 464, -176 )
 
-[node name="Bush359" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush359" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 424, -200 )
 
-[node name="Bush360" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush360" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 408, -176 )
 
-[node name="Bush361" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush361" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 360, -160 )
 
-[node name="Bush362" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush362" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 272, -176 )
 
-[node name="Bush363" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush363" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 272, -176 )
 
-[node name="Bush364" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush364" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 496, -16 )
 
-[node name="Bush365" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush365" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 528, 56 )
 
-[node name="Bush366" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush366" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 504, -136 )
 
-[node name="Bush367" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush367" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 504, -136 )
 
-[node name="Bush368" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush368" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 544, 168 )
 
-[node name="Bush369" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush369" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 424, 256 )
 
-[node name="Bush370" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush370" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 448, 408 )
 
-[node name="Bush371" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush371" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 424, 360 )
 
-[node name="Bush372" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush372" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 464, 376 )
 
-[node name="Bush373" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush373" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 432, 320 )
 
-[node name="Bush374" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush374" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 328, 512 )
 
-[node name="Bush375" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush375" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 488, 816 )
 
-[node name="Bush376" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush376" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 512, 800 )
 
-[node name="Bush377" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush377" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 440, 792 )
 
-[node name="Bush378" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush378" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 448, 824 )
 
-[node name="Bush379" parent="World objects/Bushes" instance=ExtResource( 1 )]
+[node name="Bush379" parent="World objects/Bushes/301 - 400" instance=ExtResource( 1 )]
 position = Vector2( 176, 816 )
 
 [node name="Grass" type="YSort" parent="World objects"]
 
-[node name="Grass" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="0 - 100" type="YSort" parent="World objects/Grass"]
+
+[node name="Grass" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 32, 112 )
 
-[node name="Grass2" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass2" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 48, 112 )
 
-[node name="Grass3" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass3" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 168, 40 )
 
-[node name="Grass4" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass4" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 152, 48 )
 
-[node name="Grass5" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass5" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 176, 64 )
 
-[node name="Grass6" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass6" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 160, 64 )
 
-[node name="Grass7" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass7" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 160, 144 )
 
-[node name="Grass8" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass8" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 160, 128 )
 
-[node name="Grass9" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass9" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 96, 0 )
 
-[node name="Grass10" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass10" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 96, 24 )
 
-[node name="Grass11" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass11" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 240, 72 )
 
-[node name="Grass12" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass12" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 256, 88 )
 
-[node name="Grass13" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass13" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 232, 96 )
 
-[node name="Grass14" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass14" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 272, 152 )
 
-[node name="Grass15" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass15" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 0, 8 )
 
-[node name="Grass16" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass16" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -280, 112 )
 
-[node name="Grass17" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass17" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -272, 88 )
 
-[node name="Grass18" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass18" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -280, 72 )
 
-[node name="Grass20" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass20" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -288, 56 )
 
-[node name="Grass19" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass19" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -80, 192 )
 
-[node name="Grass21" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass21" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -328, 8 )
 
-[node name="Grass22" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass22" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -312, -8 )
 
-[node name="Grass23" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass23" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -344, 24 )
 
-[node name="Grass24" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass24" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -352, 8 )
 
-[node name="Grass25" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass25" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -344, -16 )
 
-[node name="Grass26" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass26" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -312, 32 )
 
-[node name="Grass34" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass34" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -232, 128 )
 
-[node name="Grass27" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass27" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -248, 144 )
 
-[node name="Grass28" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass28" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -224, 144 )
 
-[node name="Grass29" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass29" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -160, 64 )
 
-[node name="Grass30" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass30" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -96, 112 )
 
-[node name="Grass31" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass31" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -112, 64 )
 
-[node name="Grass32" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass32" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -96, 64 )
 
-[node name="Grass33" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass33" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -288, 96 )
 
-[node name="Grass35" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass35" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -408, 80 )
 
-[node name="Grass36" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass36" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 32, 112 )
 
-[node name="Grass37" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass37" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 48, 112 )
 
-[node name="Grass38" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass38" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 168, 40 )
 
-[node name="Grass39" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass39" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 152, 48 )
 
-[node name="Grass40" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass40" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 176, 64 )
 
-[node name="Grass41" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass41" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 160, 64 )
 
-[node name="Grass42" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass42" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 160, 144 )
 
-[node name="Grass43" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass43" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 160, 128 )
 
-[node name="Grass44" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass44" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 96, 0 )
 
-[node name="Grass45" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass45" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 96, 24 )
 
-[node name="Grass46" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass46" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 240, 72 )
 
-[node name="Grass47" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass47" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 256, 88 )
 
-[node name="Grass48" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass48" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 232, 96 )
 
-[node name="Grass49" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass49" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 272, 152 )
 
-[node name="Grass50" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass50" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 0, 8 )
 
-[node name="Grass51" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass51" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -280, 112 )
 
-[node name="Grass52" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass52" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -272, 88 )
 
-[node name="Grass53" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass53" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -280, 72 )
 
-[node name="Grass54" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass54" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -288, 56 )
 
-[node name="Grass55" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass55" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -80, 192 )
 
-[node name="Grass56" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass56" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -328, 8 )
 
-[node name="Grass57" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass57" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -312, -8 )
 
-[node name="Grass58" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass58" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -344, 24 )
 
-[node name="Grass59" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass59" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -352, 8 )
 
-[node name="Grass60" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass60" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -344, -16 )
 
-[node name="Grass61" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass61" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -312, 32 )
 
-[node name="Grass62" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass62" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -232, 128 )
 
-[node name="Grass63" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass63" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -248, 144 )
 
-[node name="Grass64" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass64" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -224, 144 )
 
-[node name="Grass65" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass65" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -160, 64 )
 
-[node name="Grass66" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass66" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -96, 112 )
 
-[node name="Grass67" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass67" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -112, 64 )
 
-[node name="Grass68" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass68" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -96, 64 )
 
-[node name="Grass69" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass69" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -288, 96 )
 
-[node name="Grass70" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass70" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -432, 72 )
 
-[node name="Grass71" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass71" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -416, 104 )
 
-[node name="Grass72" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass72" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -400, 112 )
 
-[node name="Grass73" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass73" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -16, -24 )
 
-[node name="Grass74" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass74" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -424, 120 )
 
-[node name="Grass75" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass75" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -24, -8 )
 
-[node name="Grass76" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass76" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 0, -16 )
 
-[node name="Grass77" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass77" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -16, -48 )
 
-[node name="Grass78" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass78" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -8, -64 )
 
-[node name="Grass79" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass79" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 40, -64 )
 
-[node name="Grass80" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass80" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 32, -48 )
 
-[node name="Grass81" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass81" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 80, -64 )
 
-[node name="Grass82" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass82" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 96, -56 )
 
-[node name="Grass83" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass83" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 96, -56 )
 
-[node name="Grass84" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass84" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 96, -40 )
 
-[node name="Grass85" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass85" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -32, -56 )
 
-[node name="Grass86" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass86" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 0, -16 )
 
-[node name="Grass87" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass87" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -424, 120 )
 
-[node name="Grass88" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass88" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 112, -176 )
 
-[node name="Grass89" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass89" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 136, -168 )
 
-[node name="Grass90" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass90" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 8, -176 )
 
-[node name="Grass91" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass91" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -24, -168 )
 
-[node name="Grass92" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass92" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 0, -208 )
 
-[node name="Grass93" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass93" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 224, -176 )
 
-[node name="Grass94" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass94" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( 184, -168 )
 
-[node name="Grass95" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass95" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -128, -168 )
 
-[node name="Grass96" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass96" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -192, -176 )
 
-[node name="Grass97" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass97" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -240, -152 )
 
-[node name="Grass98" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass98" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -272, -120 )
 
-[node name="Grass99" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass99" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -240, -96 )
 
-[node name="Grass100" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass100" parent="World objects/Grass/0 - 100" instance=ExtResource( 6 )]
 position = Vector2( -216, -104 )
 
-[node name="Grass101" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="101 - 200" type="YSort" parent="World objects/Grass"]
+
+[node name="Grass101" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -256, -16 )
 
-[node name="Grass102" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass102" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -320, -56 )
 
-[node name="Grass103" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass103" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -336, -80 )
 
-[node name="Grass104" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass104" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -312, -160 )
 
-[node name="Grass105" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass105" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -328, -184 )
 
-[node name="Grass106" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass106" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -344, -160 )
 
-[node name="Grass107" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass107" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -264, -208 )
 
-[node name="Grass108" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass108" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -240, -216 )
 
-[node name="Grass109" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass109" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -256, -184 )
 
-[node name="Grass110" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass110" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -232, -192 )
 
-[node name="Grass111" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass111" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -128, -56 )
 
-[node name="Grass112" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass112" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -96, -48 )
 
-[node name="Grass113" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass113" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -112, -64 )
 
-[node name="Grass114" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass114" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -120, -40 )
 
-[node name="Grass115" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass115" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -88, -24 )
 
-[node name="Grass116" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass116" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -64, -16 )
 
-[node name="Grass117" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass117" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -192, -96 )
 
-[node name="Grass118" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass118" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -176, -72 )
 
-[node name="Grass119" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass119" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -152, -128 )
 
-[node name="Grass120" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass120" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -136, -112 )
 
-[node name="Grass121" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass121" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 128, -112 )
 
-[node name="Grass122" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass122" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 152, -128 )
 
-[node name="Grass123" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass123" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 168, -112 )
 
-[node name="Grass124" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass124" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 296, 192 )
 
-[node name="Grass125" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass125" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 296, 168 )
 
-[node name="Grass126" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass126" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 272, 176 )
 
-[node name="Grass127" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass127" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -304, 232 )
 
-[node name="Grass128" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass128" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -280, 224 )
 
-[node name="Grass129" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass129" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -272, 248 )
 
-[node name="Grass130" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass130" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -328, 232 )
 
-[node name="Grass131" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass131" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -296, 256 )
 
-[node name="Grass132" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass132" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -336, 136 )
 
-[node name="Grass133" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass133" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -320, 152 )
 
-[node name="Grass134" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass134" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 120, 504 )
 
-[node name="Grass135" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass135" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 80, 496 )
 
-[node name="Grass136" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass136" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 32, 536 )
 
-[node name="Grass137" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass137" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 8, 576 )
 
-[node name="Grass138" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass138" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -32, 592 )
 
-[node name="Grass140" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass140" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( -16, 584 )
 
-[node name="Grass141" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass141" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 72, 584 )
 
-[node name="Grass142" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass142" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 96, 552 )
 
-[node name="Grass143" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass143" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 56, 616 )
 
-[node name="Grass144" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass144" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 64, 688 )
 
-[node name="Grass146" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass146" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 64, 664 )
 
-[node name="Grass147" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass147" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 96, 712 )
 
-[node name="Grass148" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass148" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 112, 720 )
 
-[node name="Grass149" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass149" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 112, 704 )
 
-[node name="Grass150" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass150" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 296, 720 )
 
-[node name="Grass151" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass151" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 320, 704 )
 
-[node name="Grass152" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass152" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 312, 720 )
 
-[node name="Grass153" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass153" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 360, 696 )
 
-[node name="Grass154" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass154" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 384, 696 )
 
-[node name="Grass155" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass155" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 392, 712 )
 
-[node name="Grass156" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass156" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 368, 656 )
 
-[node name="Grass157" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass157" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 360, 624 )
 
-[node name="Grass163" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass163" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 392, 544 )
 
-[node name="Grass164" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass164" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 432, 536 )
 
-[node name="Grass165" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass165" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 416, 552 )
 
-[node name="Grass166" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass166" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 416, 576 )
 
-[node name="Grass167" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass167" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 432, 560 )
 
-[node name="Grass168" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass168" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 424, 592 )
 
-[node name="Grass169" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass169" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 448, 584 )
 
-[node name="Grass170" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass170" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 400, 600 )
 
-[node name="Grass176" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass176" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 464, 600 )
 
-[node name="Grass177" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass177" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 464, 568 )
 
-[node name="Grass178" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass178" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 424, 504 )
 
-[node name="Grass179" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass179" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 360, 488 )
 
-[node name="Grass180" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass180" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 352, 464 )
 
-[node name="Grass181" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass181" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 312, 480 )
 
-[node name="Grass182" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass182" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 312, 456 )
 
-[node name="Grass183" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass183" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 328, 416 )
 
-[node name="Grass184" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass184" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 304, 392 )
 
-[node name="Grass185" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass185" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 320, 352 )
 
-[node name="Grass186" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass186" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 304, 328 )
 
-[node name="Grass187" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass187" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 320, 320 )
 
-[node name="Grass188" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass188" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 304, 280 )
 
-[node name="Grass189" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass189" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 336, 248 )
 
-[node name="Grass190" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass190" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 320, 224 )
 
-[node name="Grass191" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass191" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 328, 184 )
 
-[node name="Grass192" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass192" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 312, 144 )
 
-[node name="Grass193" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass193" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 328, 88 )
 
-[node name="Grass194" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass194" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 344, 56 )
 
-[node name="Grass195" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass195" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 360, 8 )
 
-[node name="Grass196" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass196" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 392, 8 )
 
-[node name="Grass197" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass197" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 528, -24 )
 
-[node name="Grass198" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass198" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 544, 16 )
 
-[node name="Grass199" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass199" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 568, -56 )
 
-[node name="Grass200" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass200" parent="World objects/Grass/101 - 200" instance=ExtResource( 6 )]
 position = Vector2( 528, -120 )
 
-[node name="Grass201" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="201 - 300" type="YSort" parent="World objects/Grass"]
+
+[node name="Grass201" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 544, -168 )
 
-[node name="Grass202" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass202" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 480, -200 )
 
-[node name="Grass203" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass203" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 400, -128 )
 
-[node name="Grass204" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass204" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 384, -128 )
 
-[node name="Grass205" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass205" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 384, -112 )
 
-[node name="Grass206" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass206" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 392, -88 )
 
-[node name="Grass207" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass207" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 368, -112 )
 
-[node name="Grass208" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass208" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 352, -128 )
 
-[node name="Grass209" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass209" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 384, -56 )
 
-[node name="Grass210" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass210" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 400, -72 )
 
-[node name="Grass211" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass211" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 392, -24 )
 
-[node name="Grass212" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass212" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 328, 16 )
 
-[node name="Grass213" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass213" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 256, -24 )
 
-[node name="Grass214" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass214" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 280, 0 )
 
-[node name="Grass215" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass215" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 168, -24 )
 
-[node name="Grass216" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass216" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 192, -16 )
 
-[node name="Grass217" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass217" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 176, 0 )
 
-[node name="Grass218" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass218" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 376, 136 )
 
-[node name="Grass219" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass219" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 360, 192 )
 
-[node name="Grass220" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass220" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 392, 184 )
 
-[node name="Grass221" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass221" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 392, 232 )
 
-[node name="Grass222" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass222" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 416, 272 )
 
-[node name="Grass223" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass223" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 368, 304 )
 
-[node name="Grass224" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass224" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 400, 320 )
 
-[node name="Grass225" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass225" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 360, 360 )
 
-[node name="Grass226" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass226" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 392, 384 )
 
-[node name="Grass231" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass231" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 480, 488 )
 
-[node name="Grass232" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass232" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 112, 384 )
 
-[node name="Grass233" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass233" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 120, 288 )
 
-[node name="Grass234" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass234" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 144, 296 )
 
-[node name="Grass235" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass235" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 160, 248 )
 
-[node name="Grass236" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass236" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 256, 232 )
 
-[node name="Grass237" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass237" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 264, 272 )
 
-[node name="Grass254" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass254" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 256, 560 )
 
-[node name="Grass255" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass255" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 176, 720 )
 
-[node name="Grass256" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass256" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 288, 696 )
 
-[node name="Grass257" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass257" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 240, 768 )
 
-[node name="Grass258" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass258" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 256, 760 )
 
-[node name="Grass259" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass259" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 272, 752 )
 
-[node name="Grass260" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass260" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 224, 744 )
 
-[node name="Grass261" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass261" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 224, 744 )
 
-[node name="Grass238" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass238" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 272, 320 )
 
-[node name="Grass239" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass239" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 256, 368 )
 
-[node name="Grass240" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass240" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 264, 416 )
 
-[node name="Grass241" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass241" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 168, 448 )
 
-[node name="Grass242" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass242" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 184, 416 )
 
-[node name="Grass243" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass243" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 168, 504 )
 
-[node name="Grass244" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass244" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 264, 488 )
 
-[node name="Grass245" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass245" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 264, 488 )
 
-[node name="Grass246" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass246" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 272, 472 )
 
-[node name="Grass247" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass247" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 256, 448 )
 
-[node name="Grass248" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass248" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 272, 432 )
 
-[node name="Grass249" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass249" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 272, 379 )
 
-[node name="Grass250" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass250" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 272, 360 )
 
-[node name="Grass251" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass251" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 256, 344 )
 
-[node name="Grass252" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass252" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 264, 304 )
 
-[node name="Grass253" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass253" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 256, 256 )
 
-[node name="Grass227" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass227" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 424, 368 )
 
-[node name="Grass228" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass228" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 440, 336 )
 
-[node name="Grass229" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass229" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 432, 296 )
 
-[node name="Grass230" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass230" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 432, 296 )
 
-[node name="Grass171" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass171" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 432, 608 )
 
-[node name="Grass172" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass172" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 424, 640 )
 
-[node name="Grass173" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass173" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 440, 624 )
 
-[node name="Grass174" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass174" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 416, 624 )
 
-[node name="Grass175" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass175" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 416, 624 )
 
-[node name="Grass158" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass158" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 360, 592 )
 
-[node name="Grass159" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass159" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 328, 568 )
 
-[node name="Grass160" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass160" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 304, 544 )
 
-[node name="Grass161" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass161" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 312, 560 )
 
-[node name="Grass162" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass162" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 352, 608 )
 
-[node name="Grass145" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass145" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( 48, 656 )
 
-[node name="Grass139" parent="World objects/Grass" instance=ExtResource( 6 )]
+[node name="Grass139" parent="World objects/Grass/201 - 300" instance=ExtResource( 6 )]
 position = Vector2( -8, 560 )
+
+[node name="Trees" type="YSort" parent="World objects"]
+
+[node name="Tree" parent="World objects/Trees" instance=ExtResource( 3 )]
+position = Vector2( -24, 160 )
+
+[node name="Tree2" parent="World objects/Trees" instance=ExtResource( 3 )]
+position = Vector2( 200, 48 )

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bush2.png-f2bd4c878f10afed5f52d438fabcbd96.stex"
+path="res://.import/EnemyDeathEffect.png-00e18b237a14885e436f502ce21e7e78.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/Bush2.png"
-dest_files=[ "res://.import/Bush2.png-f2bd4c878f10afed5f52d438fabcbd96.stex" ]
+source_file="res://Effects/Art/EnemyDeathEffect.png"
+dest_files=[ "res://.import/EnemyDeathEffect.png-00e18b237a14885e436f502ce21e7e78.stex" ]
 
 [params]
 
