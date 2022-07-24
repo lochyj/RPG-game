@@ -2147,7 +2147,7 @@ position = Vector2( -344, 80 )
 position = Vector2( -240, 32 )
 
 [node name="Grass4" parent="World objects/Grass" instance=ExtResource( 6 )]
-position = Vector2( -248, 48 )
+position = Vector2( -160, 32 )
 
 [node name="Grass5" parent="World objects/Grass" instance=ExtResource( 6 )]
 position = Vector2( -208, 128 )

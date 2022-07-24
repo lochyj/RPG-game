@@ -61,7 +61,7 @@ script = ExtResource( 9 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 6 )
-frame = 1
+frame = 4
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -69,11 +69,9 @@ offset = Vector2( 0, -12 )
 texture = ExtResource( 2 )
 
 [node name="Collider" type="CollisionShape2D" parent="."]
-visible = false
 shape = SubResource( 7 )
 
 [node name="HitBox" parent="." instance=ExtResource( 6 )]
-visible = false
 collision_mask = 4
 
 [node name="CollisionShape2D" parent="HitBox" index="0"]
@@ -81,7 +79,6 @@ position = Vector2( 0, -17 )
 shape = SubResource( 10 )
 
 [node name="HurtBox" parent="." instance=ExtResource( 4 )]
-visible = false
 collision_layer = 8
 
 [node name="CollisionShape2D" parent="HurtBox" index="0"]
@@ -89,7 +86,6 @@ position = Vector2( 0, -17 )
 shape = SubResource( 8 )
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 3 )]
-visible = false
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
 modulate = Color( 1, 1, 1, 0.388235 )
@@ -97,14 +93,12 @@ position = Vector2( 0, -8 )
 shape = SubResource( 9 )
 
 [node name="SoftCollision" parent="." instance=ExtResource( 5 )]
-visible = false
 
 [node name="CollisionShape2D" parent="SoftCollision" index="0"]
 position = Vector2( 0, -4 )
 shape = SubResource( 11 )
 
 [node name="WanderController" parent="." instance=ExtResource( 7 )]
-visible = false
 
 [node name="Stats" parent="." instance=ExtResource( 8 )]
 maxHealth = 3
